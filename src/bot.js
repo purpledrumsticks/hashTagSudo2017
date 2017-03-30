@@ -18,12 +18,7 @@ const retweet = function retweet () {
     lang: 'en'
   }
 
-  Twitter.get('search/tweets', params, function (err,data) {
-
-    let tweet = data.statuses;
-    let randomTweet = ranDom(tweet);
-
-    if (typeof randomTweet !== 'undefined') {
+  if (typeof randomTweet !== 'undefined') {
       Twitter.post('statuses/retweet/:id', {
         id: randomTweet.id_str
       }, function (err,response) {
