@@ -22,5 +22,5 @@ app.listen(process.env.PORT || 5000, function () {
 })
 
 setInterval(() => {
-  http.get("http://florida-music-bot.herokuapp.com");
+  http.get("http://http://hash-tag-sudo-2017.herokuapp.com/");
 }, 180000);
