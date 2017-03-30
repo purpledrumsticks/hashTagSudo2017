@@ -11,14 +11,6 @@ const ranDom = function (arr) {
   return arr[index];
 }
 
-const postTweet = function postTweet () {
-  Twitter.post('statuses/update', {status: '#sudo2017'}, (err, data, response) => {
-    console.log(data);
-  });
-}
-
-postTweet();
-
 const retweet = function retweet () {
   let params = {
     q: '%40sudo2017 OR %23sudo2017 sudo2017:media',
@@ -52,6 +44,14 @@ const retweet = function retweet () {
 
 retweet();
 setInterval(retweet, 60000 * 60);
+
+const postTweet = function postTweet () {
+  Twitter.post('statuses/update', {status: '#sudo2017'}, (err, data, response) => {
+    console.log(data);
+  });
+}
+
+postTweet();
 
 app.listen(process.env.PORT || 5000, function () {
   console.log('#sudo2017 is listening on port 5000');
