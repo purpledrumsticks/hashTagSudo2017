@@ -11,9 +11,9 @@ const ranDom = function (arr) {
   return arr[index];
 }
 
-const retweet = function retweet () {
+const retweet = function () {
   let params = {
-    q: '%40sudo2017 OR %23sudo2017 sudo2017:media',
+    q: '%40sudo2017 OR %sudo2017 OR sudo2017:media',
     result_type: 'mixed OR recent OR popular',
     lang: 'en'
   }
