@@ -13,7 +13,7 @@ const ranDom = function (arr) {
 
 const retweet = function () {
   let params = {
-    q: '%40sudo2017 OR %23sudo2017 OR sudo2017:media OR %40HackStetson or %23HackStetson',
+    q: '%40sudo2017 OR %23sudo2017 OR sudo2017:media OR %40HackStetson OR %23HackStetson',
     result_type: 'mixed OR recent OR popular',
     lang: 'en'
   }
